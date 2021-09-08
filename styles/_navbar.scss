@@ -1,0 +1,311 @@
+@import 'colors';
+@import 'mediaqueries';
+
+#btn-menu,.container-btn-menu{
+    display: none;
+}
+#btn-close,.container-btn-close{
+display: none;
+}
+
+
+.container-up{
+display: grid;
+grid-template-columns: 1fr 1fr;
+position: relative;
+height:476.91px;
+
+width: 100vw;
+
+@include tablet{
+    display: flex;
+    flex-direction: column;
+   
+    height: 100%;
+
+    
+}
+
+}
+
+
+
+
+#container-header{
+    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   width: 56.5vw;
+   
+    
+
+
+    @include tablet{
+       width: 100vw;
+        height: 100%;
+        
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #btn-menu,.container-btn-menu{
+        display: block;
+    }
+    #btn-close,.container-btn-close{
+        display: block;
+        font-size: 50px;
+        position: absolute;
+        top:10px;
+        left:0;
+        margin:8px  10px 20px;
+        
+        transition: all 0.10s ease;
+        transform: translateX(-700%);
+        
+            
+    }
+ 
+
+   
+
+        img{
+           
+            display:block;
+            
+        }
+       nav{
+          
+        width: 100%;
+        
+           display: flex;
+           
+           transition: all 0.5s ease;
+           
+           @include miniphone{
+            width: 35vw;
+            height: 100%;
+            
+            
+       
+    }
+          
+           .menu-opt{
+            
+           font-size: 1rem;
+           transition: all 0s ease;
+           transform: translateX(-700%);
+           color: $black;
+            
+            padding-right: 2px;
+            
+           
+          
+        }
+        
+       
+        
+        .logo{
+            
+           width: 200px;
+           height: 100px;
+           
+           
+            
+            
+        }
+        #btn-menu{
+            display: block;
+            color: $white;
+            margin:40px 0 10px 20px;
+            font-size: 50px;
+            
+   
+        }
+        
+       }
+     
+        
+    }
+    .nav.active{
+            position: fixed;
+        //    top: 0;
+        //    left: 0;
+        background-color: $white;
+
+        @include miniphone{
+            width: 35%;
+            height: 100%;
+            display:inline-block;
+            transform: translateX(0);
+       
+    }
+
+        .menu-opt{
+            transform: translateX(0);
+            width: 100%;
+          
+            
+            
+         }
+         #btn-close,.container-btn-close{
+            
+            transform: translateX(0);
+           }
+           img{
+               display: none;
+           }
+        }
+        
+       
+
+    nav .logo{
+       
+        padding: 50px 0 0 70px; 
+       
+
+    }
+    .menu-opt{
+        padding: 50px 0 0 30px; 
+        text-decoration: none;
+           color: $white;
+           display: inline-block;
+
+        
+
+       }
+        .menu-opt:after {
+            
+            display:block;
+            content: '';
+            border-bottom: solid 3px $white;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+          }
+          .menu-opt:hover:after { transform: scaleX(1); }
+          .menu-opt.fromRight:after{ transform-origin:100% 50%; }
+          .menu-opt.fromLeft:after{  transform-origin:  0% 50%; }
+        
+ 
+          .container-skip-mobile{
+            display: none;
+            
+        
+            @include tablet{
+                display: inline-block;
+                background-color: $black;
+                // Tama;o de los botones de skip
+            width: 25vw;
+            height:90px;
+            display: flex;
+            
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+            .btn-skip{
+                // width: 20%;
+             height:90px;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+
+            
+            }
+        
+                
+            }
+         }
+}
+
+
+
+
+
+
+.container-info{
+    
+     display: grid;
+   grid-template-rows: 1fr ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+position: relative;
+
+    .main {
+        display: block;
+      }
+
+    @include tablet{
+       
+        height: 100%;
+
+     
+         }
+     }
+    
+   
+    .information{
+     
+        flex-direction: column;
+        
+        width: 60%;
+       margin: 0 auto;
+        // margin-left: 20%;
+       
+        p{
+            padding: 5px 0 25px 0;
+        }
+        a{
+            text-decoration: none;
+            color: $black;
+            letter-spacing: 3px;
+           
+            &:hover{
+                color:$darkgray;
+                transition: all 0.3s ease-in-out;
+                letter-spacing: 7px;
+            }
+        }
+        
+    }
+    .container-skip{
+        
+       background-color:$black;
+       display: flex;
+      position: relative;
+       width: 220px;
+        height:90px;
+
+        @include tablet{
+            display: none;
+    
+         
+             }
+         }
+       
+    .btn-skip{
+        width: 110px;
+        height:90px;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+       
+       &:hover{
+        background-color:$verydarkgray ;
+
+    }
+
+       
+
+    }
+
+
+
+#info-2{
+    display: none;
+    
+}
+#info-3{
+    display: none;
+}

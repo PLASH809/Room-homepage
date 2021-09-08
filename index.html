@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles/syle.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  
+  <div class="container-up">
+  <header id="container-header">
+   
+ <nav class="nav">
+ <div class="container-btn-menu"><i class="fas fa-bars" id="btn-menu"></i></div>
+   
+  <img class="logo" src="images/logo.svg"  alt="">
+ 
+   <a class="menu-opt" href="#">home</a>
+   <a class="menu-opt"href="#">shop </a>
+   <a class="menu-opt"href="#">about</a>
+   <a class="menu-opt"href="#">contact</a>
+   <div class="container-btn-close"><i class="fas fa-times" id="btn-close"></i></div>
+  </nav>
+
+  <div class="container-skip-mobile">
+     <div class="btn-skip" ><a href="#" onclick="back()"><img src="images/icon-angle-left.svg"  alt=""></a>
+  </div>
+
+  <div class="btn-skip" > <a href="#" onclick="next()"> <img src="images/icon-angle-right.svg" alt=""></a></div>
+</div>
+</header>
+
+<!-- information n1 -->
+<section  class="container-info">
+  <!-- <div  id="info-1" class="info"> -->
+    <div class="information main" id="info-1">
+       <h1>Discover innovative ways to decorate</h1>
+
+      <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+      Our experts combine form and function in bringing your vision to life. Create a room in your 
+       own style with our collection and make your property a reflection of you and what you love.</p>
+      <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a> 
+</div>
+ 
+ 
+<!-- </div> -->
+
+  <div class="information" id="info-2" >
+ <h1> We are available all across the globe</h1>
+
+ <p> With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+  store locator. Any questions? Don't hesitate to contact us today.</p>
+  <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+</div> 
+
+  <div class="information" id="info-3" >
+ <h1> Manufactured with the best materials</h1>
+
+ <p> Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+  experience in this industry, we understand what customers want for their home and office.</p>
+
+  <a href="#">SHOP NOW <img src="images/icon-arrow.svg" alt=""></a>
+ </div> 
+  
+ <div class="container-skip">
+  <a href="#" class="back" onclick="back()"> <div class="btn-skip"><img src="images/icon-angle-left.svg"  alt="">
+</div></a>
+
+<a href="#" class="next" onclick="next()"><div class="btn-skip">  <img src="images/icon-angle-right.svg" alt=""></div></a>
+
+</section>
+
+</div>
+
+
+<!-- Section about -->
+<footer class="about-info">
+  <img src="images/image-about-dark.jpg" width="50" alt="">
+  
+<div class="container-about">
+ <h4> ABOUT OUR FURNITURE</h4>
+ <p>Our multifunctional collection blends design and function to suit your individual taste.
+  Make each room unique, or pick a cohesive theme that best express your interests and what
+  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+  or anything in between. Product specialists are available to help you create your dream space.</p>
+</div>
+  <img src="images/image-about-light.jpg"    alt="">
+</footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Karen Peña</a>.
+  </div>
+</div>
+</body>
+
+<script src="js.js"></script>
+</html>
